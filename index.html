@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset=utf-8>
-    <title>Hello </title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .item {
+      background: blue;
+      height: 50px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    @media (min-width: 400px) {
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item {
+        background: red;
+        width: 40%;
+        margin: 5%;
+      }
+    }
+    @media (min-width: 800px) {
+      body {
+        flex-wrap: nowrap;
+      }
+    }
+    @media (min-width: 1200px) {
+      .item:not(:hover) {
+        /* display: none; */
+        /* visibility: hidden; */
+        opacity: 0.5;
+      }
+    }
+  </style>
 </head>
-
-
 <body>
-    
-    Aleksandra Nowicka-Jasztal <br/>
-
-    aleksandranowickajasztal@gmail.com
-    </body>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</body>
+</html>

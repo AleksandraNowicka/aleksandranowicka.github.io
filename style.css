@@ -19,11 +19,33 @@ header img {
     dispaly:block
 }
 
-nav {
-    background-color: darkcyan;
+.home.main p {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 15px 0;
 }
 
-nav a {}
+nav { 
+ overflow: hidden;    
+ 
+}
+
+nav a {
+   
+    display: block;
+    width: 25%;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkcyan; 
+    padding: 15px 30px;
+    font-size: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
 
 a.menu{
     display: inline-block;
@@ -35,7 +57,12 @@ a.menu{
 }
  a.menu:hover {
      background-color: crimson;
+     cursor: pointer;
+     font-size: 24px;
  }
+
+
+ 
 
  .active {
     background-color: crimson;
@@ -54,6 +81,8 @@ padding-bottom: 15 px;
 border-bottom: 2px solid crismon;
 }
 
+
+
 .left {
     float: left;
     padding: 10px;
@@ -67,3 +96,26 @@ line-height: 25px;
 font-size: 18px;
 padding: 15px 0 15px 0;
 }
+
+footer {
+    height: 40px;
+    background-color: darkcyan;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+     margin-top: 10px;
+}
+@media (max-width:800px) {
+    nav a {
+        width: 50%;
+        font-size: 22px;
+ }
+ h1 {
+     font-size: 40px;
+ }
+
+ @media (max-width:500px) {
+    nav a {
+        width: 100%;
+
+ }
